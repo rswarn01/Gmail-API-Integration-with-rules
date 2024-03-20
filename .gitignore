@@ -1,0 +1,18 @@
+
+# Created by https://www.gitignore.io/api/macos,emacs,python,visualstudiocode
+# Edit at https://www.gitignore.io/?templates=macos,emacs,python,visualstudiocode
+
+# Installer logs
+pip-log.txt
+pip-delete-this-directory.txt
+
+#secret files
+credentials.json
+token.json
+
+# End of https://www.toptal.com/developers/gitignore/api/sonar,sonarqube
+
+### SQLITE database ###
+# This database is supposed to be for local development, so ignoring it
+*.sqlite*
+

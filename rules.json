@@ -1,0 +1,42 @@
+{
+    "rules": [
+        {
+            "predicate": "All",
+            "conditions": [
+                {
+                    "field": "From",
+                    "predicate": "Contains",
+                    "value": "hrishabhsoni412@gmail.com"
+                },
+                {
+                    "field": "Subject",
+                    "predicate": "Contains",
+                    "value": "test"
+                }
+            ],
+            "actions": [
+                "Mark as read",
+                "Move Message"
+            ]
+        },
+        {
+            "predicate": "Any",
+            "conditions": [
+                {
+                    "field": "Received_Time",
+                    "predicate": "Less than",
+                    "value": "2024-02-20 23:54:06"
+                },
+                {
+                    "field": "Message",
+                    "predicate": "Does not Contain",
+                    "value": "spam"
+                }
+            ],
+            "actions": [
+                "Mark as unread",
+                "Move Message"
+            ]
+        }
+    ]
+}
