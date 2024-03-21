@@ -5,8 +5,8 @@ from my_app.view import EmailProcess
 @app.route("/data_ingestion")
 def index():
     ep_object = EmailProcess()
-    messages = ep_object.get_messages()
-    ep_object.get_messages()
+    service, messages = ep_object.get_messages()
+    ep_object.create_database()
     ep_object.store_emails(messages=messages)
     return "Data Ingestion Done, in DB"
 

@@ -4,20 +4,15 @@
             "predicate": "All",
             "conditions": [
                 {
-                    "field": "From",
-                    "predicate": "Contains",
-                    "value": "hrishabhsoni412@gmail.com"
-                },
-                {
-                    "field": "Subject",
-                    "predicate": "Contains",
-                    "value": "test"
+                    "field": "Received_Time",
+                    "predicate": "less than",
+                    "value": "2024-03-15 23:54:06"
                 }
             ],
-            "actions": [
-                "Mark as read",
-                "Move Message"
-            ]
+            "actions": {
+                "action": "move message",
+                "label_id": "TRASH"
+            }
         },
         {
             "predicate": "Any",
@@ -33,10 +28,7 @@
                     "value": "spam"
                 }
             ],
-            "actions": [
-                "Mark as unread",
-                "Move Message"
-            ]
+            "actions": "Mark as unread"
         }
     ]
 }
