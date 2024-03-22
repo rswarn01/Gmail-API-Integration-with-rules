@@ -8,13 +8,13 @@ This project is a Python script that utilizes the Gmail API to fetch emails from
 ## SECTION 1:
 1. **get_nessage**: The script authenticates to Google's Gmail API using OAuth 2.0 authentication. and get all the emails.
 
-2. **create_db**: we are using Squlite3 db, creating an email table adding Message-Id, Subject, Sender, Snippet, Label, Status,         and Time 
+2. **create_db**: we are using Squlite3 db, creating an email table adding Message-Id, Subject, Sender, Snippet, Label, Status, and Time 
 3. **Store Emalis**: In the part, we are string emails to the DB table.
-4. **Rule-based Processing**: The script applies rules defined in a JSON file to the fetched emails. These rules specify conditions based on email properties such as sender, subject, message content, and received date/time. Depending on           whether the conditions are met, the script performs certain actions on the emails.
+4. **Rule-based Processing**: The script applies rules defined in a JSON file to the fetched emails. These rules specify conditions based on email properties such as sender, subject, message content, and received date/time. Depending on whether the conditions are met, the script performs certain actions on the emails.
 
 
 ## SECTION 2:
-1. **Apply Rules**: After fetching rules from the JSON file, we are applying those based on condition, predicate or other           criteria.
+1. **Apply Rules**: After fetching rules from the JSON file, we are applying those based on condition, predicate or other criteria.
 
 ## How It Works:
 
@@ -34,7 +34,7 @@ The script uses Python and the `google-api-python-client` library to interact wi
    - We need to install virtual env to run the app. (in pipfile all the module and libraries are mentioned we can use that           file directly to install.
      ```
      pipenv install
-     pip install google-auth google-auth-oauthlib google-auth-httplib2 google-api-python-client
+     pipenv install google-auth google-auth-oauthlib google-auth-httplib2 google-api-python-client
      ```
 
 3. **Configure Credentials**:
@@ -53,7 +53,7 @@ The script uses Python and the `google-api-python-client` library to interact wi
 
 6. **Review Output**:
    - The script will fetch emails from your Gmail inbox, apply the specified rules, and take actions accordingly.
-   - Review the console output to see the status of email processing and any errors encountered.
+   - Review the console output to see the status of email processing and any errors encountered, Can check DB also.
 
 7. **Customize**:
    - Modify the script and rules file as needed to suit your specific requirements.
@@ -61,5 +61,3 @@ The script uses Python and the `google-api-python-client` library to interact wi
 ## Note:
 - Ensure that your Gmail account allows access to less secure apps or has 2-step verification enabled with an app password.
 - Make sure to handle sensitive data, such as OAuth 2.0 credentials, securely.
-- This project serves as a basic example and may require further customization depending on your use case.
-
