@@ -50,6 +50,11 @@ The script uses Python and the `google-api-python-client` library to interact wi
      ```
      python run.py
      ```
+     For the first step run:
+     http://127.0.0.1:5000/data_ingestion
+
+     For second step for filtering:
+     http://127.0.0.1:5000/filter_email_rules
 
 6. **Review Output**:
    - The script will fetch emails from your Gmail inbox, apply the specified rules, and take actions accordingly.
