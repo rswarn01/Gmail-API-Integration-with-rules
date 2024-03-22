@@ -8,13 +8,13 @@ This project is a Python script that utilizes the Gmail API to fetch emails from
 ## SECTION 1:
 1. **get_nessage**: The script authenticates to Google's Gmail API using OAuth 2.0 authentication. and get all the emails.
 
-2. **create_db**: we are using Squlite3 db, creating an email table adding Message-Id, Subject, Sender, Snippet, Label, Status, and Time 
+2. **create_db**: we are using Squlite3 db, creating an email table adding Message-Id, Subject, Sender, Snippet, Label, Status, and Time. We can open the db file online to see the data if we don't have the app in the system.
 3. **Store Emalis**: In the part, we are string emails to the DB table.
 4. **Rule-based Processing**: The script applies rules defined in a JSON file to the fetched emails. These rules specify conditions based on email properties such as sender, subject, message content, and received date/time. Depending on whether the conditions are met, the script performs certain actions on the emails.
 
 
 ## SECTION 2:
-1. **Apply Rules**: After fetching rules from the JSON file, we are applying those based on condition, predicate or other criteria.
+1. **Apply Rules**: After fetching rules from the JSON file, we are applying those based on condition, predicate, or other criteria.
 
 ## How It Works:
 
