@@ -28,7 +28,9 @@
                     "value": "spam"
                 }
             ],
-            "actions": "Mark as unread"
+            "actions": {
+                "action": "mark as read"
+            }
         }
     ]
 }

@@ -166,7 +166,7 @@ class EmailProcess:
             print(f"An error occurred: {error}")
             return ("Failed to export data", str(error))
 
-    # Step 3: Create a database and store emails
+    # Step 2: Create a database and store emails
     def create_database(self):
         """Creates a SQLite database and a table to store emails."""
         conn = sqlite3.connect("emails.db")
@@ -189,7 +189,7 @@ class EmailProcess:
 
         """here limiting the email, just for small use case."""
 
-        for message in messages[:100]:
+        for message in messages[:60]:
             msg = (
                 service.users().messages().get(userId="me", id=message["id"]).execute()
             )
